@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('../fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    min-width: 1420px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+ 
+}
+
+
+header {
+    position: relative;
+    margin-top: 40px;
+    width: 1160px;
+    height: 300px;
+    background: #f0c52e;
+}
+
+.header__logo a {
+    position: absolute;
+    top: -17px;  
+    font-family: 'gilroy', arial;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header__sub-menu {
+    padding-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.header__sub-menu a {
+
+    display: inline-block;
+    vertical-align: top;
+}
