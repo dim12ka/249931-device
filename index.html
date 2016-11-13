@@ -10,184 +10,182 @@
   <body>
 		<header class="header">
 			<div class="header__logo">
-				<a href="#" class="header__logo-text">Device</a>
-			</div>
-			<div class="header__sub-menu">
-				<div class="header__search__form">
-					<form>
-						<img class="search__form_icon" src="#">
-						<input type="text" name="search" value="поиск по сайту">
-					</form>
+					<a href="#" class="header__logo-text">Device</a>
 				</div>
-				<div class="sub-menu__login">
-					<img src="#" class="login__icon">
-					<a href="#" class="login__text">Войти</a>
+					<div class="header__sub-menu">
+						<form class="search__form">
+								<img class="search__form-icon" src="img/search.svg">
+								<label for="search">Поиск по сайту</label>
+								<input type="search" name="search" id="search" value="">
+								<button class="search__form-btn">Найти</button>
+						</form>
+						<ul class="sub-menu__item">
+							<li class="sub-menu__login">
+								<a href="#" class="login__text">Войти</a>
+							</li>
+							<li class="sub-menu__compare">
+								<a href="#" class="compare__text">Сравнить</a>
+							</li>
+							<li class="sub-menu__cart">
+								<a href="#" class="cart__text">Корзина</a>
+							</li>
+						</ul>
 				</div>
-				<div class="sub-menu__compare">
-					<img src="#" class="compare__icon">
-					<a href="#" class="compare__text">Сравнить</a>
-				</div>
-				<div class="sub-menu__cart">
-					<img src="#" alt="cart" class="sub-menu__cart__img cart__icon">
-					<a href="#" class="sub-menu__cart__text cart__text">Корзина</a>
-				</div>
-			</div>
 			<nav class="main-menu">
-				<div class="main-menu-left">
-					<div class="menu-expand">
-						<a class="menu-expand__text" href="#">
-						<img src="#" class="menu-expand__plus">
-						</a>
-						<ul class="menu-expand__catalog-section-1">
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-						</ul>
-						<ul class="menu-expand__catalog-section-2">
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-						</ul>
-						<ul class="menu-expand__catalog-section-3">
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li menu-expand__catalog catalog__item>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="main__menu-right">
-					<ul class="menu-right__items">
-						<li class="menu-right__item menu-right__item-selected">
+				<ul class="main-menu__items">
+					<li class="main-menu__item">
+						<a class="menu-expand__text main-menu-left" href="#">Каталог товаров</a></li>
+							<ul class="menu-expand__catalog menu-expand__catalog-section-1">
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+							</ul>
+							<ul class="menu-expand__catalog menu-expand__catalog-section-2">
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+							</ul>
+							<ul class="menu-expand__catalog menu-expand__catalog-section-3">
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="menu-expand__catalog catalog__item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+							</ul>
+					<li class="main-menu__item main-menu-right">
 							<a class="menu-right__link" href="#">Доставка</a>
-						</li>
-						<li class="menu-right__item">
+					</li>
+					<li class="main-menu__item main-menu-right">
 							<a class="menu-right__link" href="#">Гарантия</a>
-						</li>
-						<li class="menu-rigth__item">
+					</li>
+					<li class="main-menu__item main-menu-right">
 							<a class="menu-right__link" href="#">Контакты</a>
-						</li>
-					</ul>
-				</div>
+					</li>
+				</ul>
 			</nav>
 		</header>
-		<section class="slider">
-			<div class="slider-left">
-				<div class="main-photo">
-					<img class="main-photo__img" src="#" alt="myPhoto" >
-					<a class="main-photo__link" href="#"></a>
+		<main class="main-content">
+			<section class="slider">
+				<div class="slider-left">
+					<div class="main-photo">
+						<img class="main-photo__img" src="#" alt="myPhoto" >
+						<a class="main-photo__link" href="#"></a>
+					</div>
 				</div>
+				<div class="slider-right">
+					<img class="slider__number" src="#">
+					<h2 class="slider__slogan">Делай селфи,<br> как Бен Стиллер!</h2>
+					<p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине.
+												Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a class="slider__link" href="#">Подробнее</a>
+					<ul class="slider__changer">
+						<li>
+							<img class="slider__changer-1 slider__changer-selected" src="#">
+						</li>
+						<li>
+							<img class="slider__changer-2" src="#">
+						</li>
+						<li>
+							<img class="slider__changer-3" src="#">
+						</li>
+					</ul>
+					<div class="slider__feature">
+						<div class="feature">
+							<h3 class="feature-size">8,5 м</h3>
+							<p class="feature__name">Длина палки</p>
+						</div>
+						<div class="feature">
+							<h3 class="feature-weight">5 м</h3>
+							<p class="feature__name">Вес палки</p>
+						</div>
+						<div class="feature">
+							<h3 class="feature-material">Карбон</h3>
+							<p class="feature-name">Материал</p>
+						</div>
+					</div>
+			</section>
+			<aside class="popular-menu">
+				<ul class="popular-menu__items">
+					<li class="popular-menu__item">
+						<img src="" alt="" class="item__img">
+						<a href="#" class="item__url">Виртуальная реальность</a>
+					</li>
+					<li class="popular-menu__item">
+						<img src="" alt="" class="item__img">
+						<a href="#" class="item__url">Виртуальная реальность</a>
+					</li>
+					<li class="popular-menu__item">
+						<img src="" alt="" class="item__img">
+						<a href="#" class="item__url">Виртуальная реальность</a>
+					</li>
+					<li class="popular-menu__item">
+						<img src="" alt="" class="item__img">
+						<a href="#" class="item__url">Виртуальная реальность</a>
+					</li>
+					<li class="popular-menu__item">
+						<img src="" alt="" class="item__img">
+						<a href="#" class="item__url">Виртуальная реальность</a>
+					</li>
+					<li class="popular-menu__item">
+						<img src="" alt="" class="item__img">
+						<a href="#" class="item__url">Виртуальная реальность</a>
+					</li>
+				</ul>
+			</aside>
+			<div class="service-menu">
+				<ul class="left-part>
+					<li class="left-menu__item">Доставка</li>
+					<li class="left-menu__item">Гарантия</li>
+					<li class="left-menu__item">Кредит</li>
+				</ul>
+				<article class="right-part">
+					<h1 class="right-part__header">Доставка</h1>
+					<p class="right-part__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					<img src="#" class="right-part__img">
+				</article>
 			</div>
-			<div class="slider-right">
-				<img class="slider__number" src="#">
-				<h2 class="slider__slogan">Делай селфи,<br> как Бен Стиллер!</h2>
-				<p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине.
-											Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-				<a class="slider__link" href="#">Подробнее</a>
-				<ul class="slider__changer">
-					<li>
-						<img class="slider__changer-1 slider__changer-selected" src="#">
-					</li>
-					<li>
-						<img class="slider__changer-2" src="#">
-					</li>
-					<li>
-						<img class="slider__changer-3" src="#">
-					</li>
-				</ul>
-				<div class="slider__feature">
-					<div class="feature">
-						<h3 class="feature-size">8,5 м</h3>
-						<p class="feature__name">Длина палки</p>
-					</div>
-					<div class="feature">
-						<h3 class="feature-weight">5 м</h3>
-						<p class="feature__name">Вес палки</p>
-					</div>
-					<div class="feature">
-						<h3 class="feature-material">Карбон</h3>
-						<p class="feature-name">Материал</p>
-					</div>
-				</div>
-		</section>
-		<aside class="popular-menu">
-			<ul class="popular-menu__items">
-				<li class="popular-menu__item">
-					<img src="" alt="" class="item__img">
-					<a href="#" class="item__url">Виртуальная реальность</a>
-				</li>
-				<li class="popular-menu__item">
-					<img src="" alt="" class="item__img">
-					<a href="#" class="item__url">Виртуальная реальность</a>
-				</li>
-				<li class="popular-menu__item">
-					<img src="" alt="" class="item__img">
-					<a href="#" class="item__url">Виртуальная реальность</a>
-				</li>
-				<li class="popular-menu__item">
-					<img src="" alt="" class="item__img">
-					<a href="#" class="item__url">Виртуальная реальность</a>
-				</li>
-				<li class="popular-menu__item">
-					<img src="" alt="" class="item__img">
-					<a href="#" class="item__url">Виртуальная реальность</a>
-				</li>
-				<li class="popular-menu__item">
-					<img src="" alt="" class="item__img">
-					<a href="#" class="item__url">Виртуальная реальность</a>
-				</li>
-			</ul>
-		</aside>
-		<div class="service-menu">
-			<ul class="left-part>
-				<li class="left-menu__item left-menu__item-active">Доставка</li>
-				<li class="left-menu__item">Гарантия</li>
-				<li class="left-menu__item">Кредит</li>
-			</ul>
-			<article class="right-part">
-				<h1 class="right-part__header">Доставка</h1>
-				<p class="right-part__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-				<img src="#" class="right-part__img">
-			</article>
-		</div>
-		<div class="partners">
-			<img src="#" class="partners__logo">
-		</div>
-		<div class="company-content">
-			<section class="company-content__info">
-				<h2 class="info__header">О нас</h2>
-				<p class="info__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul>
-				<li>Деловые Линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#" class="info__link">Подробнее</a>
-			</section>
-			<section class="company-content__address">
-				<h2 class="address__header">Контакты</h2>
-				<p class="address__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<img src="#" alt="карта" class="address__map">
-				<a href="#" class="info__link">Напишите Нам</a>
-			</section>
-		</div>
+			<div class="partners">
+				<img src="#" class="partners__logo">
+				<img src="#" class="partners__logo">
+				<img src="#" class="partners__logo">
+				<img src="#" class="partners__logo">
+				<img src="#" class="partners__logo">
+			</div>
+			<div class="company-content">
+				<section class="company-content__info">
+					<h2 class="info__header">О нас</h2>
+					<p class="info__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<ul>
+					<li>Деловые Линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<a href="#" class="info__link">Подробнее</a>
+				</section>
+				<section class="company-content__address">
+					<h2 class="address__header">Контакты</h2>
+					<p class="address__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+					<img src="#" alt="карта" class="address__map">
+					<a href="#" class="info__link">Напишите Нам</a>
+				</section>
+			</div>
+		</main>
 		<footer class="footer">
 			<section class="footer-left">
 				<div class="footer__logo">
