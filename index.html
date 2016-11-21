@@ -9,218 +9,193 @@
   </head>
   <body>
 		<header class="header">
-			<div class="header__logo">
-					<a href="#" class="header__logo-text">Device</a>
-				</div>
-					<div class="header__sub-menu">
-						<form class="search__form">
-								<img class="search__form-icon" src="img/search.svg">
-								<label for="search">Поиск по сайту</label>
-								<input type="search" name="search" id="search" value="">
-								<button class="search__form-btn">Найти</button>
-						</form>
-						<ul class="sub-menu__item">
-							<li class="sub-menu__login">
-								<a href="#" class="login__text">Войти</a>
+			<div class="container">
+				<div class="header__logo">
+						<a href="#" class="logo">Device</a>
+					</div>
+				<div class="header__top clearfix">
+					<div class="header__search">
+						<div class="search">
+							<form action="" class="search__form">
+								<span class="search__icon"></span>
+								<input class="search__input" type="search" name="search" id="search" placeholder="Поиск по сайту" value="">
+								<input type="submit" name="" class="search__btn" value="Найти">
+							</form>
+						</div>
+					</div>
+					<div class="header__top-menu">
+						<ul class="top-menu">
+							<li class="top-menu__item">
+								<a href="#" class="top-menu__link">
+									<span class="top-menu__link-icon">
+										<img src="img/user.png">
+									</span>
+									<span class="top-menu__link-text">Войти</span>
+								</a>
 							</li>
-							<li class="sub-menu__compare">
-								<a href="#" class="compare__text">Сравнить</a>
+							<li class="top-menu__item">
+								<a href="#" class="top-menu__link">
+									<span class="top-menu__link-icon">
+										<img src="img/compare.png" alt="">
+									</span>
+									<span class="top-menu__link-text">Сравнить</span>
+								</a>
 							</li>
-							<li class="sub-menu__cart">
-								<a href="#" class="cart__text">Корзина</a>
+							<li class="top-menu__item">
+								<a href="#" class="top-menu__link">
+									<span class="top-menu__link-icon">
+										<img src="img/cart.png" alt="">
+									</span>
+									<span class="top-menu__link-text">Корзина</span>
+								</a>
 							</li>
 						</ul>
-				</div>
-			<nav class="main-menu">
-				<ul class="main-menu__items">
-					<li class="main-menu__item">
-						<a class="menu-expand__text main-menu-left" href="#">Каталог товаров</a></li>
-							<ul class="menu-expand__catalog menu-expand__catalog-section-1">
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-							</ul>
-							<ul class="menu-expand__catalog menu-expand__catalog-section-2">
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-							</ul>
-							<ul class="menu-expand__catalog menu-expand__catalog-section-3">
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-								<li class="menu-expand__catalog catalog__item">
-									<a href="#">Виртуальная реальность</a>
-								</li>
-							</ul>
-					<li class="main-menu__item main-menu-right">
-							<a class="menu-right__link" href="#">Доставка</a>
-					</li>
-					<li class="main-menu__item main-menu-right">
-							<a class="menu-right__link" href="#">Гарантия</a>
-					</li>
-					<li class="main-menu__item main-menu-right">
-							<a class="menu-right__link" href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main class="main-content">
-			<section class="slider">
-				<div class="slider-left">
-					<div class="main-photo">
-						<img class="main-photo__img" src="#" alt="myPhoto" >
-						<a class="main-photo__link" href="#"></a>
 					</div>
 				</div>
-				<div class="slider-right">
-					<img class="slider__number" src="#">
-					<h2 class="slider__slogan">Делай селфи,<br> как Бен Стиллер!</h2>
-					<p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине.
-												Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a class="slider__link" href="#">Подробнее</a>
-					<ul class="slider__changer">
-						<li>
-							<img class="slider__changer-1 slider__changer-selected" src="#">
+				<nav class="header__main-menu clearfix">
+					<ul class="main-menu">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__link-text main-menu__link-iconed">Каталог товаров</span>
+								<img src="img/plus.svg" class="main-menu__link-ico" alt="">
+							</a>
 						</li>
-						<li>
-							<img class="slider__changer-2" src="#">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__link-text">Доставка</span>
+							</a>
 						</li>
-						<li>
-							<img class="slider__changer-3" src="#">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__link-text">Гарантия</span>
+							</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__link-text">Контакты</span>
+							</a>
 						</li>
 					</ul>
-					<div class="slider__feature">
-						<div class="feature">
-							<h3 class="feature-size">8,5 м</h3>
-							<p class="feature__name">Длина палки</p>
-						</div>
-						<div class="feature">
-							<h3 class="feature-weight">5 м</h3>
-							<p class="feature__name">Вес палки</p>
-						</div>
-						<div class="feature">
-							<h3 class="feature-material">Карбон</h3>
-							<p class="feature-name">Материал</p>
-						</div>
+				</nav>
+			</div>
+		</header>
+		<div class="header__slider clearfix">
+				<div class="slider-container clearfix">
+					<ul class="slider__list">
+							<li class="slider__list-item">
+								<div class="slider__photo">
+									<img class="slider__image" src="img/slider-1.png" alt="slider-1">
+								</div>
+								<div class="slider__text">	
+									<span class="slider__slogan">Делай селфи,<br> как Бен Стиллер!</span>
+									<span class="slider__number">01</span>
+									<p class="slider__desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+									<a class="slider__link" href="#"><span class="slider__link-text">Подробнее</span></a>
+									<div class="slider__feature">
+										<ul class="feature__item">
+											<li class="item__list">
+												<span class="list__title">8,5 м</span>
+												<p class="list__name">Длина палки</p>
+												</li>
+											<li class="item__list">
+												<span class="list__title">5 м</span>
+												<p class="list__name">Вес палки</p>
+											</li>
+											<li class="item__list">
+												<span class="list__title">Карбон</span>
+												<p class="list__name">Материал</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="slider__controls">
+							<li class="slider__controls-item"></li>
+						</ul>
 					</div>
-			</section>
-			<aside class="popular-menu">
-				<ul class="popular-menu__items">
-					<li class="popular-menu__item">
-						<img src="" alt="" class="item__img">
-						<a href="#" class="item__url">Виртуальная реальность</a>
+				</div>
+		<main class="main-content clearfix">
+			<aside class="category">
+				<ul class="category__list">
+					<li class="category__item">
+						<a href="#" class="category__link">
+						<img class="category__img" src="img/popular-1.png">
+						<b class="category__title">Виртуальная реальность</b></a>
 					</li>
-					<li class="popular-menu__item">
-						<img src="" alt="" class="item__img">
-						<a href="#" class="item__url">Виртуальная реальность</a>
+					<li class="category__item">
+						<a href="#" class="category__link">
+						<img class="category__img" src="img/popular-2.png">
+						<b class="category__title">Моноподы для селфи</b></a>
 					</li>
-					<li class="popular-menu__item">
-						<img src="" alt="" class="item__img">
-						<a href="#" class="item__url">Виртуальная реальность</a>
+					<li class="category__item">
+						<a href="#" class="category__link">
+						<img class="category__img" src="img/popular-3.png">
+						<b class="category__title">Экшн-камеры</b></a>
 					</li>
-					<li class="popular-menu__item">
-						<img src="" alt="" class="item__img">
-						<a href="#" class="item__url">Виртуальная реальность</a>
+					<li class="category__item">
+						<a href="#" class="category__link">
+						<img class="category__img" src="img/popular-4.png">
+						<b class="category__title">Фитнесс браслеты</b></a>
 					</li>
-					<li class="popular-menu__item">
-						<img src="" alt="" class="item__img">
-						<a href="#" class="item__url">Виртуальная реальность</a>
+					<li class="category__item">
+						<a href="#" class="category__link">
+						<img class="category__img" src="img/popular-5.png">
+						<b class="category__title">Умные часы</b></a>
 					</li>
-					<li class="popular-menu__item">
-						<img src="" alt="" class="item__img">
-						<a href="#" class="item__url">Виртуальная реальность</a>
+					<li class="category__item">
+						<a href="#" class="category__link">
+						<img class="category__img" src="img/popular-6.png">
+						<b class="category__title">Квадрокоптеры</b></a>
 					</li>
 				</ul>
 			</aside>
-			<div class="service-menu">
-				<ul class="left-part>
-					<li class="left-menu__item">Доставка</li>
-					<li class="left-menu__item">Гарантия</li>
-					<li class="left-menu__item">Кредит</li>
-				</ul>
-				<article class="right-part">
-					<h1 class="right-part__header">Доставка</h1>
-					<p class="right-part__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					<img src="#" class="right-part__img">
-				</article>
-			</div>
-			<div class="partners">
-				<img src="#" class="partners__logo">
-				<img src="#" class="partners__logo">
-				<img src="#" class="partners__logo">
-				<img src="#" class="partners__logo">
-				<img src="#" class="partners__logo">
-			</div>
-			<div class="company-content">
-				<section class="company-content__info">
-					<h2 class="info__header">О нас</h2>
-					<p class="info__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-					<ul>
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-					</ul>
-					<a href="#" class="info__link">Подробнее</a>
-				</section>
-				<section class="company-content__address">
-					<h2 class="address__header">Контакты</h2>
-					<p class="address__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<img src="#" alt="карта" class="address__map">
-					<a href="#" class="info__link">Напишите Нам</a>
-				</section>
+			<div class="service-tabbed clearfix">
+				<div class="tabs clearfix">
+					<div class="tabs__item">
+					    <input class="tabs__input delivery" id="delivery" type="radio" name="tabs" checked>
+					   	<label class="tabs__label" for="delivery" title="Доставка">Доставка</label>
+						<div class="content">
+							<article>
+								<header>Доставка</header>
+									<p>
+									Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Восемьедь мы неплохо заработаем, поднимая его на ваш этаж.
+									</p>
+									<img class="service__img" src="img/delivery.png" alt="">
+							</article>
+						</div>
+					</div>
+					<div class="tabs__item">
+					   	<input class="tabs__input waranty" id="waranty" type="radio" name="tabs">
+						<label class="tabs__label" for="waranty" title="Гарантия">Гарантия</label>
+						<div class="content">
+							<article>
+								<header>Гарантия</header>
+									<p>
+									Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Восемьедь мы неплохо заработаем, поднимая его на ваш этаж.
+									</p>
+									<img class="service__img" src="img/warranty.png" alt="">
+							</article>
+						</div>
+					</div>
+					<div class="tabs__item">
+						<input class="tabs__input credit" id="credit" type="radio" name="tabs">
+					    <label class="tabs__label" for="credit" title="Кредит">Кредит</label>
+						<div class="content">
+							<article>
+								<header>Кредит</header>
+									<p>
+									Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Восемьедь мы неплохо заработаем, поднимая его на ваш этаж.
+									</p>
+									<img class="service__img" src="img/credit.png" alt="">
+							</article>
+						</div>
+					</div> 
+				</div>
 			</div>
 		</main>
-		<footer class="footer">
-			<section class="footer-left">
-				<div class="footer__logo">
-					<img src="#" alt="Логотип" class="footer__logo__img">
-					</div>
-				<div class="footer__address"><p>г. Москва, ул. Строителей, 15</p></div>
-				<div class="footer__line"><span></span></div></section>
-			<section class="footer-middle">
-					<ul class="footer__main-menu">
-						<li class="main-menu__item"><a href="" class="main-menu__link">Доставка</a></li>
-						<li class="main-menu__item"><a href="" class="main-menu__link">Гарантия</a></li>
-						<li class="main-menu__item"><a href="" class="main-menu__link">Контакты</a></li>
-					</ul>
-					<div class="footer__social">
-						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				        <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
-				        <a class="social-btn social-btn-inst" href="#">Твитер</a>
-					</div></section>
-			<section class="footer-right">
-				<div class="footer-right__sub-menu">
-					<ul>
-						<li class="sub-menu__login">
-							<img src="" class="login__icon login__icon">
-							<a href="#" class="login__text login__text">Войти</a></li>
-						<li class="sub-menu__compare">
-							<img src="#" class="sub-menu__compare__icon compare__icon">
-							<a href="#" class="sub-menu__compare__text compare__text">Сравнить</a></li>
-						<li class="sub-menu__cart">
-							<img src="#" alt="cart" class="sub-menu__cart__img cart__icon">
-							<a href="#" class="sub-menu__cart__text cart__text">Корзина</a></li><<</ul>
-				</div>
-				<div class="footer-right__telephone">
-						<span>Тел.: +7 (495) 495-95-95</span>
-				</div>
-				<div class="logo"></div></section>
-		</footer>
-  </body>
+		<footer>
+				<p>dasgadgsfdgsfdgsdfgsdfgs</p>
+			</footer>
+		</body>
 </html>
