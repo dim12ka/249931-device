@@ -43,6 +43,7 @@ body {
 .header {
     position: relative;
     width: 1160px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 40px;
     background: #f7e296;
@@ -80,12 +81,11 @@ body {
 }
 
 .header__search {
-    width: 440px;
+    width: 500px;
 }
 
 .header__top-menu {
-    width: 500px;
-    margin-left: 100px;
+    margin-left: 15px;
 }
 
 .search {
@@ -93,7 +93,7 @@ body {
 }
 
 .search__icon {
-    background: url("../img/search.svg") 0 0 no-repeat;
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfgCwwPNw0CfKQ/AAAAhElEQVQoz4WRURHAIAxD36EACZMwCUjB0SQgAUnMARKyDwbHym1Lv5rm2rSFhkBGd2QCBmkUexxz+UCIQiQQiBSESIzmj3TqeA/KiGJGegoit0SIaE0REQJwAJyLYDCOHzTBtvAT00z6d5Prmv65Zt/aHqqy21vOUa3EPmtfJRZdwrekXgggVlGcWYGxAAAAAElFTkSuQmCC") 0 0 no-repeat;
     width: 16px;
     height: 16px;
     display: block;
@@ -152,7 +152,7 @@ body {
 
 .top-menu__item:first-child {
     display: inline-block;
-    margin-right: 220px
+    margin-right: 245px
 }
 
 .top-menu__link {
@@ -203,13 +203,13 @@ body {
 
 .main-menu__item:first-child {
     display: inline-block;
-    margin-right: 318px;
+    margin-right: 286px;
 
 }
 
 .main-menu__item:last-child {
     display: inline-block;
-    margin-left: 112px;
+    margin-left: 115px;
     margin-right: 0;
 
 }
@@ -232,20 +232,66 @@ body {
 
 }
 
-.main-menu__link-ico {
-    position: absolute;
-    bottom: 0;
-    right: 0px;
-    top: 50%;
+.main-menu__link-icon {
+    display: inline-block;
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEUAAAAnJSUnJSUnJSUAAAAz/2FuAAAABHRSTlMATRMif154fwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfgCwwPNw0CfKQ/AAAAIklEQVQI12NgYGBgFGKAAOIZSkpKisJAgkEQChAM8gyEMQDmoAMITdvdxAAAAABJRU5ErkJggg==") no-repeat;
     width: 16px;
     height: 16px;
-    margin-top: -8px;
+    margin-left: 10px;
+}
+
+.dropdown-menu {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.drop-menu {
+    display: none;
+    float: left;
+    position: absolute;
+    left: -60px;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+    background: #f7e296;
+    z-index: 1;
+}
+
+.drop-menu__list {
+    float: left;
+    list-style: none;
+    margin: 0;
+    margin-top: 27px;
+    margin-bottom: 27px;
+
+}
+
+.drop-menu__list a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: black;
+
+}
+
+.drop-menu__col-1 {
+    margin-left: 20px;
+}
+
+
+
+.dropdown-menu:hover .drop-menu{
+    display: block;
+ 
+
 }
 
 /*----------------Slider------------------------*/
 
 .slider-container {
-    width: 1070px;
+    width: 1060px;
     margin: 0 auto;
     background: white;
 
@@ -300,6 +346,16 @@ body {
     font-weight: bold;
 }
 
+.slider__slogan:before {
+    position: absolute;
+    top: -45px;
+    content: "";
+    width: 100px;
+    height: 7px;
+    display: block;
+    background: white;
+}
+
 .slider__number {
     position: absolute;
     top: -30px;
@@ -338,6 +394,8 @@ body {
     background: #f0c52e;
     z-index: -99999;
 }
+
+
 
 
 .slider__feature {
@@ -401,6 +459,8 @@ body {
     margin-right: 0;
 }
 
+
+
 .category__link {
     display: block;
     width: 160px;
@@ -413,6 +473,13 @@ body {
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+
+}
+
+.category__img-down {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: -45px; right: 0;
 
 }
 
@@ -429,6 +496,8 @@ body {
     line-height: 18px;
     
 }
+
+
 
 .service-tabbed {
     width: 100%;
@@ -568,6 +637,7 @@ body {
     width: 1060px;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 160px;
 
 }
 
@@ -619,6 +689,16 @@ body {
     font-size: 16px;
     font-weight: bold;
 }
+
+.about__header:before, .contacts__header:before { 
+    position: absolute;
+    top: -20px;
+    left: 0;
+    content: "";
+    width: 80px;
+    height: 7px;
+    background: #000;
+ }
 
 .about li:before {
     margin-right: 25px;
@@ -705,7 +785,7 @@ body {
     font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffcc99;
+    color: #f7e184;
 }
 
 .footer__logo:hover {
@@ -725,7 +805,7 @@ body {
     content: "";
     width: 80px;
     height: 7px;
-    background: #ffcc99;
+    background: #f7e184;
     border-left: 1px;
 }
 

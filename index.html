@@ -55,10 +55,23 @@
 				<nav class="header__main-menu clearfix">
 					<ul class="main-menu">
 						<li class="main-menu__item">
-							<a href="#" class="main-menu__link">
-								<span class="main-menu__link-text main-menu__link-iconed">Каталог товаров</span>
-								<img src="img/plus.svg" class="main-menu__link-ico" alt="">
-							</a>
+							<div class="dropdown-menu">
+								<span class="main-menu__link-text main-menu__dropdown">Каталог товаров</span>
+								<span class="main-menu__link-icon" alt=""></span></a>
+							<div class="drop-menu clearfix">
+								<ul class="drop-menu__list drop-menu__col-1">
+									<li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+									<li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+									<li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+								</ul>
+								<ul class="drop-menu__list drop-menu__col-2">
+									<li class="col__item"><a href="#" class="col__item-link">Фитнес браслеты</a></li>
+									<li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+								</ul>
+								<ul class="drop-menu__list drop-menu__col-3">
+									<li class="col__item"><a href="#" class="col__item-link">Квадрокоптеры</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="main-menu__item">
 							<a href="#" class="main-menu__link">
@@ -91,6 +104,7 @@
 									<span class="slider__number">01</span>
 									<p class="slider__desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 									<a class="slider__link" href="#"><span class="slider__link-text">Подробнее</span></a>
+									<div class="slider__controls">
 									<div class="slider__feature">
 										<ul class="feature__item">
 											<li class="item__list">
@@ -110,9 +124,6 @@
 								</div>
 							</li>
 						</ul>
-						<ul class="slider__controls">
-							<li class="slider__controls-item"></li>
-						</ul>
 					</div>
 				</div>
 		<main class="main-content clearfix">
@@ -123,9 +134,9 @@
 						<img class="category__img" src="img/popular-1.png">
 						<b class="category__title">Виртуальная реальность</b></a>
 					</li>
-					<li class="category__item">
+					<li class="category__item item__monopod">
 						<a href="#" class="category__link">
-						<img class="category__img" src="img/popular-2.png">
+						<img class="category__img category__img-down" src="img/popular-2.png">
 						<b class="category__title">Моноподы для селфи</b></a>
 					</li>
 					<li class="category__item">
