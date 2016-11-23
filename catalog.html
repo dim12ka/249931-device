@@ -2,98 +2,104 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Моноподы для селфи</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
         <header class="header">
-            <div class="header__logo">
-                <img src="/" alt="logo" class="header__logo-img logo__img">
-            </div>
-            <div class="header__sub-menu">
-                <div class="header__search-form">
-                    <form>
-                        <img class="search-form__icon" src="#">
-                        <input type="text" name="search" value="поиск по сайту">
-                    </form>
+            <div class="container">
+                <div class="header__logo">
+                        <a href="#" class="logo">Device</a>
                 </div>
-                <div class="sub-menu__login">
-                    <img src="" class="login__icon">
-                    <a href="#" class="login__text">Войти</a>
-                </div>
-                <div class="sub-menu__compare">
-                    <img src="#" class="compare__icon">
-                    <a href="#" class="compare__text">Сравнить</a>
-                </div>
-                <div class="sub-menu__cart">
-                    <img src="#" alt="cart" class="cart__icon">
-                    <a href="#" class="cart__text">Корзина</a>
-                </div>
-            </div>
-            <nav class="main-menu">
-                <div class="main-menu-left">
-                    <div class="menu-expand">
-                        <a class="menu-expand__text" href="#">
-                        <img src="#" class="menu-expand__plus">
-                        </a>
-                        <ul class="menu-expand__catalog-section-1">
-                            <li menu-expand__catalog catalog__item catalog__item-new>
-                                <a href="#">Виртуальная реальность</a>
+                <div class="header__top clearfix">
+                    <div class="header__search">
+                        <div class="search">
+                            <form action="" class="search__form">
+                                <span class="search__icon"></span>
+                                <input class="search__input" type="search" name="search" id="search" placeholder="Поиск по сайту" value="">
+                                <input type="submit" name="" class="search__btn" value="Найти">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__top-menu">
+                        <ul class="top-menu">
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">
+                                    <span class="top-menu__link-icon">
+                                        <img src="img/user.png">
+                                    </span>
+                                    <span class="top-menu__link-text">Войти</span>
+                                </a>
                             </li>
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">
+                                    <span class="top-menu__link-icon">
+                                        <img src="img/compare.png" alt="">
+                                    </span>
+                                    <span class="top-menu__link-text">Сравнить</span>
+                                </a>
                             </li>
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                        </ul>
-                        <ul class="menu-expand__catalog-section-2">
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                        </ul>
-                        <ul class="menu-expand__catalog-section-3">
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                            <li menu-expand__catalog catalog__item>
-                                <a href="#">Виртуальная реальность</a>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">
+                                    <span class="top-menu__link-icon">
+                                        <img src="img/cart.png" alt="">
+                                    </span>
+                                    <span class="top-menu__link-text">Корзина</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="main__menu-right">
-                    <ul class="menu-right__items">
-                        <li class="menu-right__item menu-right__item-selected">
-                            <a class="menu-right__link" href="#">Доставка</a>
+                <nav class="header__main-menu clearfix">
+                    <ul class="main-menu">
+                        <li class="main-menu__item">
+                            <div class="dropdown-menu">
+                                <span class="main-menu__link-text main-menu__dropdown">Каталог товаров</span>
+                                <span class="main-menu__link-icon" alt=""></span></a>
+                            <div class="drop-menu clearfix">
+                                <ul class="drop-menu__list drop-menu__col-1">
+                                    <li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+                                    <li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+                                    <li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+                                </ul>
+                                <ul class="drop-menu__list drop-menu__col-2">
+                                    <li class="col__item"><a href="#" class="col__item-link">Фитнес браслеты</a></li>
+                                    <li class="col__item"><a href="#" class="col__item-link">Виртуальная реальность</a></li>
+                                </ul>
+                                <ul class="drop-menu__list drop-menu__col-3">
+                                    <li class="col__item"><a href="#" class="col__item-link">Квадрокоптеры</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="menu-right__item">
-                            <a class="menu-right__link" href="#">Гарантия</a>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <span class="main-menu__link-text">Доставка</span>
+                            </a>
                         </li>
-                        <li class="menu-rigth__item">
-                            <a class="menu-right__link" href="#">Контакты</a>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <span class="main-menu__link-text">Гарантия</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <span class="main-menu__link-text">Контакты</span>
+                            </a>
                         </li>
                     </ul>
-                </div>
-            </nav></header>
-        <div class="sub-header">
-            <h1 class="sub-header"></h1>
+                </nav>
+            </div>
+        </header>
+        <section class="sub-header">
+            <h1 class="sub-header">Моноподы для селфи</h1>
             <ul class="sub-header__breadcrumbs">
-                <li class="breadcrumbs__items">Главная</li>
-                <li class="breadcrumbs__items">Каталог товаров</li>
-                <li class="breadcrumbs__items breadcrumbs__items-last">Моноподы для селфи</li>
-            </ul> </div>
+                <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__items"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
+                <li class="breadcrumbs__items breadcrumbs__items-last"><a href="#" class="breadcrumbs__link">Моноподы для селфи</a></li>
+            </ul> 
+        </section>
         <main class="main-content">
             <aside class="filter">
                 <form class="filter__form form" action="#" method="get"> 
@@ -158,40 +164,67 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <section class="footer-left">
-                <div class="footer__logo">
-                    <img src="#" alt="Логотип" class="footer__logo__img">
-                    </div>
-                <div class="footer__address"><p>г. Москва, ул. Строителей, 15</p></div>
-                <div class="footer__line"><span></span></div></section>
-            <section class="footer-middle">
-                    <ul class="footer__main-menu">
-                        <li class="main-menu__item"><a href="" class="main-menu__link">Доставка</a></li>
-                        <li class="main-menu__item"><a href="" class="main-menu__link">Гарантия</a></li>
-                        <li class="main-menu__item"><a href="" class="main-menu__link">Контакты</a></li>
-                    </ul>
-                    <div class="footer__social">
-                        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                        <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
-                        <a class="social-btn social-btn-inst" href="#">Твитер</a>
-                    </div></section>
-            <section class="footer-right">
-                <div class="footer-right__sub-menu">
-                    <ul>
-                        <li class="sub-menu__login">
-                            <img src="" class="login__icon login__icon">
-                            <a href="#" class="login__text login__text">Войти</a></li>
-                        <li class="sub-menu__compare">
-                            <img src="#" class="sub-menu__compare__icon compare__icon">
-                            <a href="#" class="sub-menu__compare__text compare__text">Сравнить</a></li>
-                        <li class="sub-menu__cart">
-                            <img src="#" alt="cart" class="sub-menu__cart__img cart__icon">
-                            <a href="#" class="sub-menu__cart__text cart__text">Корзина</a></li><<</ul>
-                </div>
-                <div class="footer-right__telephone">
-                        <span>Тел.: +7 (495) 495-95-95</span>
-                </div>
-                <div class="logo"></div></section></footer>
+        <footer class="main-footer">
+                <div class="footer-columns clearfix">
+                    <section class="columns__left">
+                        <span class="footer__logo">Device</span>
+                        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+                    </section>
+                    <section class="columns__middle">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Доставка</a></li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Гарантия</a></li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Контакты</a></li>
+                        </ul>
+                        <div class="footer__social">
+                            <span class="social__fb"><a class="social__link" href="#"></a></span>
+                            <span class="social__inst"><a class="social__link" href="#"></a></span>
+                            <span class="social__tw"><a class="social__link" href="#"></a></span>
+                        </div>
+                    </section>
+                    <section class="columns__last">
+                        <ul class="footer__user-menu">
+                            <li class="footer__user-menu-item">
+                                <a href="#" class="footer__user-menu-link">
+                                    <span class="footer__user-menu-icon icon-login">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                                          <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>                          
+                                        <?xpacket end="w"?></metadata>
+                                        <image id="user.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEX////34YT34YT34YT34YT34YT34YT34YT34YT34YT34YT34YQAAAA6915HAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4AsWDgglUXH7NQAAAEZJREFUCNdjYGAQ2iTAAATMu3dvBtEsu3dvQaZh4gzRuwNAFGP27kQgxd69e/fudgaGWUBq964JQFkQCGDQBtMKDGBq9wYA46ch5ws9XVUAAAAASUVORK5CYII="/>
+                                        </svg>
+                                    </span>
+                                    <span class="footer__user-menu-text ">Войти</span>
+                                </a>
+                            </li>
+                            <li class="footer__user-menu-item">
+                                <a href="#" class="footer__user-menu-link">
+                                    <span class="footer__user-menu-icon icon-compare">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10">
+                                    <?xpacket end="w"?></metadata>
+                                    <image id="compare.svg" width="10" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAgMAAADwXCcuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////34YT34YQAAABGIKGiAAAAAnRSTlMAQABPjKgAAAABYktHRAMRDEzyAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4AsWDgglUXH7NQAAABNJREFUCNdjYFjCwADBCxgW4MYADPcPyVBnIewAAAAASUVORK5CYII="/>
+                                    </svg>
+
+                                    </span>
+                                    <span class="footer__user-menu-text">Сравнить</span>
+                                </a>
+                            </li>
+                            <li class="footer__user-menu-item">
+                                <a href="#" class="footer__user-menu-link">
+                                    <span class="footer__user-menu-icon icon-cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                                        <image id="user.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEX////34YT34YT34YT34YT34YT34YT34YT34YT34YQAAAAe+GD4AAAACXRSTlMAEL+A71CPQM+3EBIuAAAAAWJLR0QKaND0VgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+ALFg4IJVFx+zUAAABOSURBVAjXY2Bg1JwkwMDAwOwaYgCkmBLYFBgYyovSy9TLGWbO0JzUOZOhc4bnlM4ZDJkzgWAaQySImsogCaImMnCAqAYGNhCVwMAOogoA5aIdBimf8bQAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    </span>
+                                    <span class="footer__user-menu-text">Корзина</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="footer__telephone" href="tel:+7495495495">Тел: +7(495)495-95-95</a>
+                        <a class="dev-logo" href="#"></a>
+                    </section>
+            </footer>
   </body>
 </html>
